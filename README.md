@@ -1,4 +1,4 @@
-# Example .NET Provider - Schemathesis
+# Example .NET Provider - Schemathesis 
 
 <!-- Build Badge -->
 
