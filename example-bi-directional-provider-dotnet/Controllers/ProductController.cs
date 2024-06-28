@@ -40,5 +40,21 @@ namespace Provider.Controllers
 
             return product;
         }
+
+        // POST /product
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        public ActionResult<Product> CreateProduct([FromBody] Product product)
+        {
+            if (product == null)
+            {
+                return new BadRequestResult();
+            }
+
+            products.Add(product);
+
+            return product;
+        }
     }
 }
