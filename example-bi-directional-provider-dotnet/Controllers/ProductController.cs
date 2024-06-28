@@ -44,7 +44,7 @@ namespace Provider.Controllers
         // POST /product
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public ActionResult<Product> CreateProduct([FromBody] Product product)
         {
             if (product == null)
